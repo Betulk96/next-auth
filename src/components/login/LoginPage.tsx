@@ -13,7 +13,7 @@ export default function LoginPage() {
       <div className="relative z-10 w-full max-w-md rounded-2xl bg-white/20 backdrop-blur-lg shadow-2xl p-10 text-center">
         <div className="flex justify-center mb-6 ">
           <div
-            className="relative w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden flex items-center justify-center shadow-2xl shadow-cyan-500/30"
+            className="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden flex items-center justify-center shadow-2xl shadow-cyan-500/30"
           >
             {/* Bu div, dönen ışık efektini oluşturacak */}
             <div
@@ -25,10 +25,12 @@ export default function LoginPage() {
 
             {/* Bu div, resmi ve diğer içeriği barındırır ve efektin üzerine yerleşir */}
             <div className="relative w-[95%] h-[95%] rounded-full bg-slate-800 flex items-center justify-center border-4 border-white/20 z-10">
-              <img
+              <Image
                 src="/logo/logo1(2).jpeg"
                 alt="Profile Picture"
                 className="w-full h-full object-cover rounded-full"
+                width={200}
+                height={200}
               />
             </div>
           </div>

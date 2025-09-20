@@ -20,7 +20,7 @@ const handler = NextAuth({
       return token;
     },
     async session({ session, token }) {
-      (session as any).accessToken = token.accessToken;
+      session.accessToken = token.accessToken as string;
       return session;
     },
   },
