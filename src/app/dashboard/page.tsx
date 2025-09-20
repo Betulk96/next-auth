@@ -3,7 +3,6 @@ import React from 'react'
 
 const Dashboard = () => {
 
-  const session = null; // Oturum verisi burada olmalı
   return (
     <div>
       <DashboardPage />
